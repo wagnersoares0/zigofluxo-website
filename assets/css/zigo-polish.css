@@ -1,0 +1,137 @@
+/* Zigo Fluxo polish */
+:root {
+  --zigo-purple: #7c4dff;
+  --zigo-green: #48f2a4;
+  --zigo-green-dark: #15b873;
+}
+
+.outer-nav > li::before {
+  background: linear-gradient(90deg, var(--zigo-purple), var(--zigo-green));
+}
+
+.side-nav li.is-active {
+  color: var(--zigo-green);
+}
+
+.side-nav li.is-active::before,
+.side-nav li.is-active::after {
+  background-color: var(--zigo-green);
+}
+
+.intro--banner button.zigo-next .btn-background {
+  background: linear-gradient(90deg, var(--zigo-purple), var(--zigo-green));
+}
+
+.intro--banner button.zigo-next:hover .btn-background {
+  left: 0;
+}
+
+.zigo-hero-icon {
+  width: 170px;
+  max-height: 170px;
+  border-radius: 34px;
+  filter: drop-shadow(0 26px 52px rgba(72, 242, 164, 0.18));
+}
+
+.zigo-intro .intro--banner img {
+  right: 130px;
+  bottom: 130px;
+}
+
+.zigo-intro .intro--banner::after {
+  background: linear-gradient(90deg, var(--zigo-purple), var(--zigo-green));
+}
+
+.zigo-intro .intro--options > a:hover h3,
+.zigo-intro .intro--options > a:hover p {
+  color: var(--zigo-green);
+}
+
+.zigo-about .about--banner::before {
+  border-top-color: var(--zigo-purple);
+  border-left-color: var(--zigo-purple);
+}
+
+.zigo-about .about--banner::after,
+.zigo-about .about--banner h2::before,
+.zigo-about .about--banner h2::after {
+  background: var(--zigo-green);
+}
+
+.zigo-about .about--options > a {
+  border-color: var(--zigo-purple);
+}
+
+.zigo-about .about--options > a:hover {
+  border-color: var(--zigo-green);
+}
+
+.zigo-resources h2 {
+  color: #fff;
+}
+
+.zigo-resources .slider--next,
+.zigo-resources .slider--prev {
+  background: linear-gradient(135deg, var(--zigo-purple), var(--zigo-green-dark));
+}
+
+.zigo-resources .slider--item-center .slider--item-image {
+  box-shadow: 0 22px 60px rgba(72, 242, 164, 0.18);
+}
+
+.zigo-faq {
+  width: 860px;
+  max-width: 82%;
+}
+
+.zigo-faq-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 28px;
+}
+
+.zigo-faq-list article {
+  min-height: 88px;
+}
+
+.zigo-faq-list h3 {
+  font-size: 16px;
+}
+
+.zigo-faq-list p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.zigo-legal .zigo-scroll-text::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--zigo-purple), var(--zigo-green));
+}
+
+.zigo-document article {
+  border-top-color: var(--zigo-green);
+}
+
+.zigo-back-link::before {
+  color: var(--zigo-green);
+}
+
+@media (max-width: 900px) {
+  .zigo-hero-icon {
+    width: 145px;
+    max-height: 145px;
+  }
+
+  .zigo-intro .intro--banner img {
+    right: 30px;
+    bottom: 80px;
+  }
+
+  .zigo-faq-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .zigo-faq {
+    max-width: 100%;
+  }
+}

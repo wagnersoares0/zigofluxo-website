@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+._*
+
+# Editor/local
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# Sass/build artifacts, if generated locally
+.sass-cache/
+*.css.map
+dist/
+build/
+
+# Local secrets must never be committed
+.env
+.env.*
+local-secrets/
